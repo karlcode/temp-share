@@ -385,7 +385,9 @@
       }
 
       .textual {
-        text-align: center;
+        /* text-align: center; */
+        padding: 16px;
+        padding-top: 0;
       }
 
       .bodytext {
@@ -400,24 +402,23 @@
   </head>
 
   <body onload="getCashbackOffer()">
+    <div class="backbutton">
+      <svg
+        width="12"
+        height="23"
+        viewBox="0 0 12 23"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0.361536 10.5379L9.1288 0.63353C9.33969 0.395279 9.59578 0.276154 9.89706 0.276154C10.1983 0.276154 10.4544 0.395279 10.6653 0.63353L11.6596 1.75671C11.8704 1.99496 11.9834 2.28427 11.9985 2.62462C12.0136 2.96498 11.9156 3.25429 11.7047 3.49254L4.69997 11.4059L11.7047 19.3192C11.9156 19.5574 12.0136 19.8467 11.9985 20.1871C11.9834 20.5275 11.8704 20.8168 11.6596 21.055L10.6653 22.1782C10.4544 22.4164 10.1983 22.5356 9.89706 22.5356C9.59578 22.5356 9.33969 22.4164 9.1288 22.1782L0.361536 12.2738C0.120512 12.0355 -4.50481e-07 11.7462 -4.37114e-07 11.4059C-4.23747e-07 11.0655 0.120512 10.7762 0.361536 10.5379Z"
+          fill="black"
+        />
+      </svg>
+    </div>
     <div class="containerz">
-      <div class="backbutton">
-        <svg
-          width="12"
-          height="23"
-          viewBox="0 0 12 23"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M0.361536 10.5379L9.1288 0.63353C9.33969 0.395279 9.59578 0.276154 9.89706 0.276154C10.1983 0.276154 10.4544 0.395279 10.6653 0.63353L11.6596 1.75671C11.8704 1.99496 11.9834 2.28427 11.9985 2.62462C12.0136 2.96498 11.9156 3.25429 11.7047 3.49254L4.69997 11.4059L11.7047 19.3192C11.9156 19.5574 12.0136 19.8467 11.9985 20.1871C11.9834 20.5275 11.8704 20.8168 11.6596 21.055L10.6653 22.1782C10.4544 22.4164 10.1983 22.5356 9.89706 22.5356C9.59578 22.5356 9.33969 22.4164 9.1288 22.1782L0.361536 12.2738C0.120512 12.0355 -4.50481e-07 11.7462 -4.37114e-07 11.4059C-4.23747e-07 11.0655 0.120512 10.7762 0.361536 10.5379Z"
-            fill="black"
-          />
-        </svg>
-      </div>
-
       <div class="center">
         <svg
           width="160"
@@ -499,12 +500,12 @@
         </svg>
       </div>
 
-      <div class="copy center">
+      <div class="copy">
         <h1 id="heading">Want more cash back?</h1>
         <!-- <p id="sub-heading"></p> -->
       </div>
 
-      <div class="textual center">
+      <div class="textual">
         <h4 class="bodytext">
           Get an additional 3% cash back for you and your friends when you both
           make a purchase at City Beach*
