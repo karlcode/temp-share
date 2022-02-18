@@ -1,0 +1,754 @@
+<html class="js-focus-visible" data-js-focus-visible="">
+  <head lang="en">
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      @font-face {
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 500;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 700;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 900;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2")
+          format("woff2");
+      }
+      @font-face {
+        font-weight: 400;
+        font-family: "Sharp Grotesk";
+        font-style: normal;
+        src: local("Sharp Grotesk Book"), local("SharpGrotesk-Book");
+        src: url("https://zip-co-media.imgix.net/global-stylesheets/fonts/SharpGroteskBook20.woff2")
+          format("woff2");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-weight: 500;
+        font-family: "Sharp Grotesk";
+        font-style: normal;
+        src: local("Sharp Grotesk Medium"), local("SharpGrotesk-Medium");
+        src: url("https://zip-co-media.imgix.net/global-stylesheets/fonts/SharpGroteskMedium20.woff2")
+          format("woff2");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-weight: 400;
+        font-family: "Cooper Lt BT";
+        font-style: normal;
+        src: local("Cooper Lt BT Regular"), local("CooperLtBT-Regular");
+        src: url("https://zip-co-media.imgix.net/global-stylesheets/fonts/CooperLight.woff2")
+          format("woff2");
+        font-display: swap;
+      }
+
+      body {
+        padding: 0px;
+        margin: 0px;
+        font-family: Sharp Grotesk, sans-serif;
+        -webkit-text-size-adjust: 100%;
+        width: 100%;
+      }
+
+      #top-section {
+        height: 300px;
+        width: 100%;
+        position: relative;
+        padding: 0px;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(245, 246, 252, 0) 30%,
+          rgb(29, 29, 29) 155%
+        );
+        background-position: center center;
+        background-size: auto 100%;
+      }
+
+      #brand-section {
+        height: 100px;
+        padding: 0 0 0 0px;
+        position: absolute;
+        bottom: 0;
+        left: 24px;
+      }
+
+      #logo-section {
+        height: 72px;
+        float: left;
+        width: 72px;
+        border-radius: 100px;
+        padding: 0 0 50 0px;
+        background-repeat: round;
+      }
+
+      #logo-image {
+        border-radius: 100px;
+        padding: 0 0 50 0px;
+        background-repeat: round;
+        height: 72px;
+        float: left;
+        width: 72px;
+      }
+
+      #logo-image-greyscale {
+        border-radius: 100px;
+        padding: 0 0 50 0px;
+        background-repeat: round;
+        height: 72px;
+        float: left;
+        width: 72px;
+        -webkit-filter: grayscale(1) invert(1);
+        filter: grayscale(1) invert(1);
+      }
+
+      #name-section {
+        height: 72px;
+        width: 200px;
+        float: left;
+        margin-left: 16px;
+      }
+
+      #top-section-heading {
+        color: white;
+        font-family: Sharp Grotesk;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.3px;
+        margin: 0;
+        margin-top: 15px;
+      }
+
+      #top-section-subheading {
+        color: white;
+        font-size: 11px;
+        line-height: 18px;
+        letter-spacing: 0.4px;
+        margin: 0;
+        margin-top: 2px;
+      }
+
+      .copy {
+        padding: 16px 16px 8px 16px;
+      }
+
+      h1 {
+        font-family: Cooper Lt BT, serif;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 34px;
+        color: #1b1323;
+      }
+
+      p {
+        font-size: 15px;
+        color: #3d3644;
+        line-height: 22px;
+        letter-spacing: 0.4px;
+      }
+
+      a {
+        text-decoration: none;
+        text-transform: none;
+        color: #411361;
+        font-size: 13px;
+        font-weight: 400;
+      }
+
+      h2 {
+        font-family: Sharp Grotesk, sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        margin: 0;
+        color: #411361;
+      }
+
+      .num-list {
+        display: flex;
+      }
+
+      .num-list p {
+        padding-left: 16px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        float: left;
+        width: 91%;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        width: 95%;
+      }
+
+      .numbers {
+        float: left;
+        width: 20.8px;
+        height: 20.8px;
+      }
+
+      .offer-terms {
+        height: 100%;
+        padding: 0px 16px 40px 16px;
+      }
+
+      .box {
+        border-radius: 8px;
+        background: #f8f8f9;
+        width: 100%;
+        height: 100%;
+        padding: 24px 0px;
+      }
+
+      .box h {
+        font-family: Sharp Grotesk, sans-serif;
+        font-size: 13px;
+        color: #1b1323;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        padding: 0px 16px 0px 16px;
+      }
+
+      .box p {
+        margin: 0;
+        font-size: 13px;
+        color: #655368;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+        padding: 0px 16px 0px 16px;
+      }
+
+      #additional-terms-conditions {
+        padding-top: 16px;
+      }
+
+      hr {
+        margin-left: 16px;
+        margin-right: 16px;
+        border: 1px solid #e8e8ec;
+      }
+
+      .bottom-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.85);
+      }
+
+      .another-button {
+        color: #411361;
+        border-radius: 8px;
+        height: 50px;
+        margin: 8px;
+      }
+
+      .another-button a {
+        display: table;
+        height: 100%;
+        width: 100%;
+      }
+
+      .share-button-thing {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .button {
+        width: 90%;
+        background-color: #411361;
+        border-radius: 8px;
+        height: 50px;
+        margin: 24px 24px 8px 24px;
+      }
+
+      .button a {
+        display: table;
+        height: 100%;
+        width: 100%;
+      }
+
+      .button p {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .bottom-terms-conditions {
+        padding: 40px 24px 150px 24px;
+      }
+
+      .bottom-terms-conditions h {
+        font-family: Sharp Grotesk, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.4px;
+        color: #655368;
+      }
+
+      .bottom-terms-conditions p {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.4px;
+        color: #655368;
+      }
+
+      .bottom-terms-conditions li {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.4px;
+        color: #655368;
+        padding: 0;
+      }
+
+      .terms-conditions {
+        padding: 40px 24px 150px 24px;
+      }
+
+      .containerz {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: 0 16px;
+        /* align-items: center; */
+      }
+
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .svgss {
+        width: 100%;
+      }
+
+      .link-thing {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+
+  <body onload="getCashbackOffer()">
+    <div class="containerz">
+      <div class="center">
+        <svg
+          width="160"
+          height="160"
+          viewBox="0 0 160 160"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M68.0046 116.1C67.5632 115.639 67.0341 115.27 66.4484 115.016C65.8628 114.762 65.2322 114.628 64.5939 114.621C63.9555 114.614 63.3222 114.734 62.731 114.975C62.1399 115.216 61.6028 115.573 61.1513 116.024C60.6999 116.476 60.3431 117.013 60.102 117.604C59.8608 118.195 59.7402 118.828 59.7471 119.466C59.754 120.105 59.8884 120.735 60.1422 121.321C60.3961 121.907 60.7645 122.436 61.2256 122.877"
+            stroke="#1A0826"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M140.282 28.3882C147.836 28.3882 152.431 36.7089 148.407 43.1018L95.0002 127.955C91.4854 133.54 85.3493 136.928 78.7509 136.928H40.383C33.1816 136.928 28.6697 129.366 31.7509 123.121C29.8369 127 32.7998 131.569 37.2319 131.569H75.3348C81.8548 131.569 87.9195 128.226 91.4004 122.713L145.145 37.5921C147.668 33.5968 145.007 28.3882 140.282 28.3882Z"
+            fill="#1A0826"
+          />
+          <path
+            d="M140.282 28.3882H101.914C95.3159 28.3882 89.1798 31.7765 85.665 37.3609L81.0005 45.0099M140.282 28.3882C147.836 28.3882 152.431 36.7089 148.407 43.1018L95.0002 127.955C91.4854 133.54 85.3493 136.928 78.7509 136.928H40.383C33.1816 136.928 28.6697 129.366 31.7509 123.121M140.282 28.3882C145.007 28.3882 147.668 33.5968 145.145 37.5921L91.4004 122.713C87.9195 128.226 81.8548 131.569 75.3348 131.569H37.2319C32.7998 131.569 29.8369 127 31.7509 123.121M31.7509 123.121C37.6061 113.508 43.6855 104.03 49.6732 94.5M52.5005 90L59.3552 79.1602"
+            stroke="#1A0826"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <line
+            x1="108.082"
+            y1="37.9419"
+            x2="119.482"
+            y2="37.9419"
+            stroke="#1A0826"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M7.99154 37.8649L7.00028 37.9968L7.99154 37.8649ZM10.9463 60.0692L11.9376 59.9373L10.9463 60.0692ZM29.3243 78.8184L30.1879 78.3142C30.0384 78.0582 29.783 77.8817 29.4907 77.8324L29.3243 78.8184ZM63.805 94.8163L63.9774 95.8014C64.4648 95.7161 64.8166 95.2871 64.8047 94.7924C64.7929 94.2976 64.421 93.886 63.93 93.8242L63.805 94.8163ZM44.8615 79.1014V78.1014C44.5403 78.1014 44.2387 78.2556 44.0507 78.516C43.8627 78.7763 43.8112 79.1111 43.9122 79.4159L44.8615 79.1014ZM82.6298 57.6901L81.6385 57.822V57.8221L82.6298 57.6901ZM79.5694 34.6929L78.5782 34.8248L79.5694 34.6929ZM8.9828 37.733C7.43068 26.0693 15.6703 16.6606 27.4367 16.6606V14.6606C14.4609 14.6606 5.28862 25.1343 7.00028 37.9968L8.9828 37.733ZM11.9376 59.9373L8.9828 37.733L7.00028 37.9968L9.95507 60.2011L11.9376 59.9373ZM29.4907 77.8324C20.6728 76.3443 13.1266 68.8724 11.9376 59.9373L9.95507 60.2011C11.2651 70.0457 19.5152 78.1772 29.1579 79.8045L29.4907 77.8324ZM28.4608 79.3227C34.3943 89.484 45.4181 96.3149 58.0384 96.3149V94.3149C46.158 94.3149 35.7777 87.8868 30.1879 78.3142L28.4608 79.3227ZM58.0384 96.3149C60.0633 96.3149 62.0478 96.139 63.9774 95.8014L63.6327 93.8313C61.8164 94.1491 59.9472 94.3149 58.0384 94.3149V96.3149ZM63.93 93.8242C55.4547 92.7567 48.4624 86.7894 45.8107 78.7869L43.9122 79.4159C46.7978 88.1244 54.4134 94.6413 63.6801 95.8085L63.93 93.8242ZM63.879 78.1014H44.8615V80.1014H63.879V78.1014ZM81.6385 57.8221C83.1323 69.0478 75.2037 78.1014 63.879 78.1014V80.1014C76.413 80.1014 85.2744 69.9827 83.621 57.5582L81.6385 57.8221ZM78.5782 34.8248L81.6385 57.822L83.621 57.5582L80.5607 34.561L78.5782 34.8248ZM57.8368 16.6606C67.9393 16.6606 77.2455 24.8105 78.5782 34.8248L80.5607 34.561C79.0958 23.5528 68.9419 14.6606 57.8368 14.6606V16.6606ZM27.4367 16.6606H57.8368V14.6606H27.4367V16.6606Z"
+            fill="#1A0826"
+          />
+          <ellipse
+            cx="46"
+            cy="47.333"
+            rx="20"
+            ry="20"
+            transform="rotate(-180 46 47.333)"
+            stroke="#1A0826"
+            stroke-width="2"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M35.5637 53.4997C36.5877 55.2732 38.0604 56.746 39.834 57.77C41.6075 58.7939 43.6194 59.333 45.6673 59.333C47.7152 59.333 49.7271 58.7939 51.5007 57.77C53.2742 56.746 54.747 55.2732 55.7709 53.4997"
+            stroke="#1A0826"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <ellipse
+            cx="52"
+            cy="43.3335"
+            rx="2"
+            ry="2"
+            transform="rotate(-180 52 43.3335)"
+            fill="#1A0826"
+            stroke="#1A0826"
+            stroke-width="2"
+            stroke-linejoin="round"
+          />
+          <ellipse
+            cx="39.333"
+            cy="43.3335"
+            rx="2"
+            ry="2"
+            transform="rotate(-180 39.333 43.3335)"
+            fill="#1A0826"
+            stroke="#1A0826"
+            stroke-width="2"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+
+      <div class="copy center">
+        <h1 id="heading">Want more cash back?</h1>
+        <!-- <p id="sub-heading"></p> -->
+      </div>
+
+      <div class="">
+        <h4>
+          Get an additional 3% cash back for you and your friends when you both
+          make a purchase at City Beach*
+        </h4>
+      </div>
+
+      <div class="link-thing">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M1.66675 10C1.66675 5.39763 5.39771 1.66667 10.0001 1.66667C14.6025 1.66667 18.3334 5.39763 18.3334 10C18.3334 14.6024 14.6025 18.3333 10.0001 18.3333C5.39771 18.3333 1.66675 14.6024 1.66675 10ZM10.0001 3.33333C6.31818 3.33333 3.33341 6.3181 3.33341 10C3.33341 13.3997 5.87815 16.205 9.16675 16.6151V12.5H7.50008V10.8333H9.16675V9.16667C9.16675 7.78596 10.286 6.66667 11.6667 6.66667H13.3334V8.33333H11.6667C11.2065 8.33333 10.8334 8.70643 10.8334 9.16667V10.8333H12.5001V12.5H10.8334V16.6151C14.122 16.205 16.6667 13.3997 16.6667 10C16.6667 6.3181 13.682 3.33333 10.0001 3.33333Z"
+            fill="#411361"
+          />
+        </svg>
+        &nbsp;&nbsp;
+        <h2>Share on Facebook</h2>
+      </div>
+      <div class="link-thing">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.88823 2.86638L9.88783 2.86641C8.79008 2.94164 7.64657 3.266 6.69755 3.76861C5.46498 4.4214 4.48174 5.33929 3.80465 6.45188L3.07854 6.00999L3.80465 6.45188C3.04384 7.70205 2.72748 9.13675 2.89271 10.5677L2.04832 10.6652L2.89271 10.5677C3.08664 12.2473 3.95674 13.8178 5.39416 15.0076L5.3942 15.0076L5.50192 15.0968C5.69656 15.258 5.80942 15.4973 5.80988 15.75L5.81284 17.3742L5.81326 17.6034C6.04452 17.4848 6.29032 17.359 6.52662 17.2383C6.85676 17.0698 7.17036 16.9101 7.40281 16.7925C7.51881 16.7337 7.61576 16.6849 7.68479 16.6504C7.7189 16.6334 7.74845 16.6188 7.7708 16.6079C7.78128 16.6028 7.79436 16.5965 7.80703 16.5907C7.81233 16.5882 7.82479 16.5825 7.83987 16.5761C7.84626 16.5734 7.86347 16.5663 7.88565 16.5584C7.89611 16.5546 7.91856 16.5468 7.94757 16.5389C7.94783 16.5388 7.94825 16.5387 7.94881 16.5386C7.96196 16.5348 8.05405 16.5088 8.17172 16.5088C8.2248 16.5088 8.26694 16.514 8.27712 16.5153L8.27786 16.5154C8.29453 16.5174 8.3082 16.5196 8.31622 16.5209C8.33262 16.5236 8.34709 16.5264 8.35636 16.5282C8.37601 16.5322 8.39698 16.5367 8.416 16.541C8.45519 16.5497 8.50313 16.5611 8.55175 16.5731L9.88823 2.86638ZM9.88823 2.86638L10.1127 2.85089L10.1364 2.85055C10.163 2.85027 10.2003 2.85008 10.246 2.85002C10.337 2.8499 10.4561 2.85028 10.5806 2.85121M9.88823 2.86638L10.5806 2.85121M10.5806 2.85121C10.5807 2.85121 10.5807 2.85121 10.5807 2.85121C10.5807 2.85121 10.5807 2.85121 10.5806 2.85121ZM16.8895 5.98611C17.5528 6.90461 17.9596 7.9252 18.1022 9.01716C18.1618 9.47308 18.1663 10.0839 18.1121 10.5642C17.9752 11.7774 17.4744 12.9686 16.6764 13.9583C16.165 14.5926 15.5081 15.1726 14.8044 15.6096C13.968 16.1291 13.0207 16.4963 12.05 16.6771L12.05 16.6771C11.4723 16.7847 10.9803 16.8258 10.3797 16.8159C9.74806 16.8054 9.19952 16.7332 8.55177 16.5731L16.8895 5.98611Z"
+            stroke="#411361"
+            stroke-width="1.7"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.30464 9.32673L9.67605 8.93837L10.1535 9.40933L11.2456 10.4864C11.3874 10.6263 11.569 10.708 11.7574 10.727C11.6063 10.8881 11.4656 11.0381 11.3397 11.1722C11.204 11.0293 11.0531 10.87 10.8945 10.7023L10.8945 10.7023C10.5534 10.3416 10.2847 10.0595 10.0989 9.86696C10.0066 9.7713 9.93169 9.69464 9.8776 9.64063C9.8516 9.61469 9.82445 9.588 9.80025 9.56549C9.78995 9.5559 9.76881 9.5364 9.74342 9.51568C9.73319 9.50734 9.70314 9.48295 9.66242 9.45668C9.6439 9.44474 9.59915 9.41662 9.53769 9.39004C9.53712 9.38979 9.53631 9.38943 9.53526 9.38896C9.51753 9.38102 9.43116 9.34234 9.30464 9.32673Z"
+            stroke="#411361"
+            stroke-width="1.7"
+            stroke-linejoin="round"
+          />
+        </svg>
+        &nbsp;&nbsp;
+        <h2>Share on Messenger</h2>
+      </div>
+      <div class="link-thing">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.4999 5C11.0677 5 9.99992 6.07586 9.99992 7.29167V9.16667C9.99992 9.59129 9.68064 9.94801 9.25862 9.99491C7.98625 10.1363 5.28847 9.75576 2.56552 7.71566C2.61807 8.28068 2.71267 8.87292 2.88302 9.45473C3.25471 10.7243 3.96956 11.8865 5.3726 12.588C5.47064 12.637 5.55805 12.7049 5.62982 12.7877C5.76936 12.9488 5.88166 13.1162 5.97529 13.279C6.09093 13.4799 6.11763 13.7199 6.04898 13.9414C5.98034 14.1628 5.82255 14.3456 5.61353 14.4459C5.08522 14.6994 4.56263 14.9249 4.08459 15.118C5.43183 15.5912 6.85008 15.8333 8.27931 15.8333C11.9749 15.8333 14.9739 12.8504 14.9998 9.16101C15.0013 8.94203 15.089 8.73245 15.2438 8.5776L16.3214 7.5H15.7666C15.3743 7.5 15.0351 7.22641 14.9521 6.84302C14.7321 5.82696 13.7485 5 12.4999 5ZM1.42468 14.3067L1.42746 14.3059L1.44047 14.3019L1.49517 14.2847C1.54397 14.2693 1.61682 14.246 1.7104 14.2152C1.89765 14.1535 2.16737 14.0619 2.49299 13.9435C2.83434 13.8194 3.23481 13.6667 3.66459 13.4892C2.36564 12.5253 1.66083 11.2118 1.28349 9.92304C0.833147 8.38485 0.833213 6.82819 0.833254 5.86077C0.833255 5.85157 0.833255 5.84243 0.833255 5.83334C0.833255 5.49628 1.03629 5.19242 1.34769 5.06344C1.65908 4.93445 2.01751 5.00575 2.25584 5.24408C4.55867 7.5469 6.97911 8.22526 8.33326 8.33717V7.29167C8.33326 5.0557 10.2502 3.33334 12.4999 3.33334C14.2318 3.33334 15.7566 4.34688 16.3751 5.83334H18.3333C18.6703 5.83334 18.9742 6.03637 19.1032 6.34777C19.2321 6.65916 19.1608 7.01759 18.9225 7.25592L16.6568 9.52165C16.4435 13.964 12.7744 17.5 8.27931 17.5C6.56187 17.5 4.85843 17.1911 3.25034 16.5881L1.37399 15.8844C1.03958 15.759 0.822267 15.4345 0.833681 15.0775C0.845093 14.7206 1.08305 14.4106 1.42468 14.3067Z"
+            fill="#411361"
+          />
+        </svg>
+        &nbsp;&nbsp;
+        <h2>Share on Twitter</h2>
+      </div>
+      <div class="link-thing">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14.1667 6.66667C14.6269 6.66667 15 6.29357 15 5.83333C15 5.3731 14.6269 5 14.1667 5C13.7064 5 13.3333 5.3731 13.3333 5.83333C13.3333 6.29357 13.7064 6.66667 14.1667 6.66667Z"
+            fill="#411361"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M5.83333 10C5.83333 7.69881 7.69881 5.83333 10 5.83333C12.3012 5.83333 14.1667 7.69881 14.1667 10C14.1667 12.3012 12.3012 14.1667 10 14.1667C7.69881 14.1667 5.83333 12.3012 5.83333 10ZM10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5Z"
+            fill="#411361"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M6.66667 2.5C4.36548 2.5 2.5 4.36548 2.5 6.66667V13.3333C2.5 15.6345 4.36548 17.5 6.66667 17.5H13.3333C15.6345 17.5 17.5 15.6345 17.5 13.3333V6.66667C17.5 4.36548 15.6345 2.5 13.3333 2.5H6.66667ZM4.16667 6.66667C4.16667 5.28595 5.28595 4.16667 6.66667 4.16667H13.3333C14.714 4.16667 15.8333 5.28595 15.8333 6.66667V13.3333C15.8333 14.714 14.714 15.8333 13.3333 15.8333H6.66667C5.28595 15.8333 4.16667 14.714 4.16667 13.3333V6.66667Z"
+            fill="#411361"
+          />
+        </svg>
+        &nbsp;&nbsp;
+        <h2>Share on Instagram</h2>
+      </div>
+      <div class="link-thing">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M16.6667 2.5H5V4.16667L15.8333 4.16747V14.1666V15H17.5V14.1663V3.33333C17.5 2.8731 17.1269 2.5 16.6667 2.5ZM16.6667 14.1667C15.8333 14.1667 15.8333 14.1666 15.8333 14.1666L16.6667 14.1667ZM17.5 14.1663C17.5 14.1663 17.5 14.1667 16.6667 14.1667L17.5 14.1663Z"
+            fill="#411361"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M3.33333 5C3.11231 5 2.90035 5.0878 2.74407 5.24409C2.58779 5.40037 2.49999 5.61234 2.5 5.83336V16.6667C2.5 16.8877 2.5878 17.0996 2.74408 17.2559C2.90036 17.4122 3.11232 17.5 3.33333 17.5H14.1667C14.6269 17.5 15 17.1265 15 16.6663V5.83333C15 5.3731 14.6269 5 14.1667 5H3.33333ZM14.1667 16.6667L15 16.6663C15 16.6663 15 16.6667 14.1667 16.6667ZM13.3333 15.8333H4.16667L4.16667 6.66667L13.3333 6.66747V15.8333Z"
+            fill="#411361"
+          />
+        </svg>
+        &nbsp;&nbsp;
+        <h2>Copy Link</h2>
+      </div>
+    </div>
+
+    <script lang="javascript">
+      async function getCashbackOffer() {
+          let url = new URL(window.location.href)
+          let entryId = url.searchParams.get("entryId")
+          let customerId = url.searchParams.get("uid") ?? ""
+
+          const prodRequest = new XMLHttpRequest()
+          prodRequest.open("GET", `https://api.prod.au.edge.zip.co/api/shop/central/entry/cashback/${entryId}?customerId=${customerId}`)
+          prodRequest.send()
+
+          prodRequest.onload = () => {
+              if (prodRequest.status !== 200) {
+                  const sandRequest = new XMLHttpRequest()
+                  sandRequest.open("GET", `https://api.sand.au.edge.zip.co/api/shop/central/entry/cashback/${entryId}?customerId=${customerId}`)
+                  sandRequest.send()
+
+                  sandRequest.onload = () => {
+                      if (sandRequest.status !== 200) return
+                      setUI(sandRequest, "co.zip.sandbox://")
+                  }
+              } else {
+                  setUI(prodRequest, "co.zip://")
+              }
+          }
+
+          prodRequest.onerror = () => {
+              const sandRequest = new XMLHttpRequest()
+              sandRequest.open("GET", `https://api.sand.au.edge.zip.co/api/shop/central/entry/cashback/${entryId}?customerId=${customerId}`)
+              sandRequest.send()
+
+              sandRequest.onload = () => {
+                  if (sandRequest.status !== 200) return
+                  setUI(sandRequest, "co.zip.sandbox://")
+              }
+          }
+      }
+
+      function setUI(request, bundleId) {
+          let data = JSON.parse(request.response)
+
+          let isMerchantOpenLoop = data.merchant.type === 'OpenLoop'
+          let merchantName = data.merchant.name
+
+          // heading
+          document.getElementById("heading").innerText = `${data.cashbackPercentage}% Cashback`
+
+          // sub-heading
+          // if (data.cashbackLimit !== null) {
+          //     if (isMerchantOpenLoop) {
+          //         document.getElementById("sub-heading").innerText = `Earn ${data.cashbackPercentage}% cashback up to $${data.cashbackLimit} per transaction when you checkout online using a single-use card in the Zip app.`
+          //     } else {
+          //         document.getElementById("sub-heading").innerText = `Earn ${data.cashbackPercentage}% cashback up to $${data.cashbackLimit} per transaction when you transact online at ${merchantName} using your Zip Account at checkout.`
+          //     }
+          // } else {
+          //     if (isMerchantOpenLoop) {
+          //         document.getElementById("sub-heading").innerText = `Earn ${data.cashbackPercentage}% cashback per transaction when you checkout online using a single-use card in the Zip app.`
+          //     } else {
+          //         document.getElementById("sub-heading").innerText = `Earn ${data.cashbackPercentage}% cashback per transaction when you transact online at ${merchantName} using your Zip Account at checkout`
+          //     }
+          // }
+
+          // additional terms & conditions
+          if (data.additionalTermsConditions != null) {
+              document.getElementById("additional-terms-conditions").innerHTML = `<i>${data.additionalTermsConditions}</i>`
+          }
+
+          // how to earn
+          if (isMerchantOpenLoop) {
+              document.getElementById("how-to-step-3").innerText = `Tap “Pay with Zip” and checkout with a single-use card`
+          } else {
+              document.getElementById("how-to-step-3").innerText = `Select Zip at checkout and pay with your Zip Account`
+          }
+
+          // offer terms
+          if (data.cashbackLimit !== null) {
+              var offerTerms = ``
+              if (isMerchantOpenLoop) {
+                  offerTerms = `Click this promotion tile and transact online at ${merchantName} using Zip’s single-use card at checkout to earn ${data.cashbackPercentage}% cashback up to a maximum of $${data.cashbackLimit} per eligible transaction. Redeemable when you reach the Rewards goal.`
+              } else {
+                  offerTerms = `Click this promotion tile and transact online at ${merchantName} using your Zip Account at checkout to earn ${data.cashbackPercentage}% cashback up to a maximum of $${data.cashbackLimit} per eligible transaction. Redeemable when you reach the Rewards goal.`
+              }
+
+              if (data.endDate !== null) {
+                  let date = new Date(data.endDate)
+                  let datetime = date.toLocaleDateString() + " " + formatAMPM(date) + " AEDT."
+                  offerTerms += ` Promotion ends on ${datetime}`
+              }
+              offerTerms += ` Reward Program T&Cs apply.`
+              document.getElementById("offer-terms").innerText = offerTerms
+          } else {
+              var offerTerms = ``
+              if (isMerchantOpenLoop) {
+                  offerTerms = `Click this promotion tile and transact online at ${merchantName} using Zip’s single-use card at checkout to earn ${data.cashbackPercentage}% cashback per eligible transaction. Redeemable when you reach the Rewards goal.`
+              } else {
+                  offerTerms = `Click this promotion tile and transact online at ${merchantName} using your Zip Account at checkout to earn ${data.cashbackPercentage}% cashback per eligible transaction. Redeemable when you reach the Rewards goal.`
+              }
+
+              if (data.endDate) {
+                  let date = new Date(data.endDate)
+                  let datetime = date.toLocaleDateString() + " " + formatAMPM(date) + " AEDT."
+                  offerTerms += ` Promotion ends on ${datetime}`
+              }
+              offerTerms += ` Reward Program T&Cs apply.`
+              document.getElementById("offer-terms").innerText = offerTerms
+          }
+
+          // background image (top-section)
+          if (data.imageUrl !== null) {
+              document.getElementById("top-section").style.backgroundImage = `linear-gradient(to bottom, rgba(245, 246, 252, 0) 30%, rgb(29, 29, 29) 155%), url('${data.imageUrl}')`
+          } else {
+              document.getElementById("top-section").style.backgroundImage = `linear-gradient(to bottom, rgba(245, 246, 252, 0) 30%, rgb(29, 29, 29) 155%), url('${data.merchant.backgroundImageUrl}')`
+          }
+
+          // logo image (logo-section)
+          if (data.merchant.bubbleImageUrl !== null) {
+              document.getElementById("logo-image").style.backgroundImage = `url('${data.merchant.bubbleImageUrl}')`
+              document.getElementById("logo-image-greyscale").style.display = 'none'
+
+              // merchant name (top-section-heading)
+              document.getElementById("top-section-heading").innerText = data.merchant.name
+              document.getElementById("top-section-subheading").innerText = "Cashback offer"
+          } else if (data.merchant.logoImageUrl !== null) {
+              document.getElementById("logo-image").style.display = 'none'
+              document.getElementById("logo-section").style.backgroundColor = 'white'
+              document.getElementById("logo-image-greyscale").style.backgroundImage = `url('${data.merchant.logoImageUrl}')`
+
+              // merchant name (top-section-heading)
+              document.getElementById("top-section-heading").innerText = data.merchant.name
+              document.getElementById("top-section-subheading").innerText = "Cashback offer"
+          }
+
+          // shop now button
+          let url = new URL(window.location.href)
+          let isFromSearch = url.searchParams.get("isFromSearch")
+          if (isFromSearch !== null && isFromSearch) {
+              document.getElementById("shop-now-button").href = `${bundleId}${data.offerDeeplinkUri}?isFromSearch=true`
+          } else {
+              document.getElementById("shop-now-button").href = `${bundleId}${data.offerDeeplinkUri}`
+          }
+      }
+
+      function formatAMPM(date) {
+          var hours = date.getHours()
+          var minutes = date.getMinutes()
+          var ampm = hours >= 12 ? 'pm' : 'am'
+          hours = hours % 12
+          hours = hours ? hours : 12 // the hour '0' should be '12'
+          minutes = minutes < 10 ? '0'+minutes : minutes
+          var strTime = hours + ':' + minutes + ' ' + ampm
+          return strTime
+      }
+    </script>
+  </body>
+  <loom-container id="lo-engage-ext-container"
+    ><loom-shadow classname="resolved"></loom-shadow></loom-container
+  ><loom-container id="lo-companion-container"
+    ><loom-shadow classname="resolved"></loom-shadow
+  ></loom-container>
+</html>
